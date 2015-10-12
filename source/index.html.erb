@@ -1,0 +1,225 @@
+---
+title: Starter Vim Cheat Sheet
+---
+
+<header>
+
+    <h1><span class="colorize">Vim</span><br> Cheat Sheet<br> for Overwhelmed Beginners </h1>
+  <h2>Selected Tips for Better First Steps</h2>
+
+</header>
+
+
+<div class="l-data-group">
+
+  <h3>Motion</h3>
+
+  <div class="clearfix">
+
+    <div class="key-data box-inline">      
+      <div class="key-name">h</div>
+      <p class="description description-box-inline">left</p>
+    </div>
+
+    <div class="key-data box-inline">  
+      <div class="key-name">j</div>
+      <p class="description description-box-inline">down</p>
+    </div>
+
+    <div class="key-data box-inline">  
+      <div class="key-name">k</div>
+      <p class="description description-box-inline">up</p>
+    </div>
+
+    <div class="key-data box-inline">  
+      <div class="key-name">l</div>
+      <p class="description  description-box-inline">right</p>
+    </div> 
+
+  </div>
+
+  <div class="key-data box-stacked inside-inline"> 
+    <div class="key-name">0</div>
+    <small>or</small> 
+    <div class="key-name key-name-long">Home</div>
+    <p class="description description-aside">
+      jump to the START of the line
+    </p>
+  </div> 
+
+  <div class="key-data box-stacked inside-inline"> 
+    <div class="key-name">$</div>
+    <small>or</small> 
+    <div class="key-name key-name-long">End</div>
+    <p class="description description-aside">
+      jump to the END of the line
+    </p>
+  </div> 
+
+  <div class="key-data box-stacked inside-inline">
+    <div class="key-name key-name-long">'number'</div>
+    <small>+</small> 
+    <div class="key-name">G</div>
+    <p class="description description-aside">
+      type <span class="typing">12G</span> to jump to the 12th line
+    </p>
+  </div> 
+
+</div>
+
+<div class="l-data-group">
+ 
+  <h3>Writing</h3>
+
+  <div class="pure-g key-data box-stacked ">
+    <div class="pure-u-1-3 key-name">i</div>
+    <p class="pure-u-2-3 description description-aside">
+      <strong>insert</strong> mode<br>
+      (press <span class="key-name-in-text">Esc</span> to switch back to 'normal')
+    </p>
+  </div> 
+
+</div>
+
+<div class="l-data-group"> 
+
+  <h3>Select / Copy / Cut / Paste</h3>
+
+  <div class="pure-g key-data box-stacked ">
+    <div class="pure-u-1-3 key-name">v</div>
+    <p class="pure-u-2-3 description description-aside">
+      visual mode - use with the motion keys to select text
+    </p>
+  </div> 
+ 
+  <div class="pure-g key-data box-stacked inside-inline">
+    <div class="pure-u-1-3 key-name">y</div>
+    <p class="pure-u-2-3 description description-aside">
+      yank (copy) what's selected
+    </p>
+  </div> 
+
+  <div class="pure-g key-data box-stacked inside-inline">
+    <div class="pure-u-1-3 key-name key-name-long">y <small>x2</small></div>
+    <p class="pure-u-2-3 description description-aside">
+      yank (copy) a line
+    </p>
+  </div>
+
+  <div class="pure-g key-data box-stacked inside-inline">
+    <div class="pure-u-1-3 key-name">x</div>
+    <p class="pure-u-2-3 description description-aside">
+      delete/cut a character under the cursor or selected text
+    </p>
+  </div>
+  
+  <div class="pure-g key-data box-stacked inside-inline">
+    <div class="pure-u-1-3 key-name key-name-long">d <small>x2</small></div>
+    <p class="pure-u-2-3 description description-aside">
+      delete/cut a line
+    </p>
+  </div>  
+
+  <div class="pure-g key-data box-stacked inside-inline">
+    <div class="pure-u-1-3 key-name">p</div>
+    <p class="pure-u-2-3 description description-aside">
+      paste from the Vim's clipboard
+    </p>
+  </div> 
+
+  <div class="key-data box-stacked inside-inline">
+    <div class="key-name">"</div>
+    <small>+</small> 
+    <div class="key-name">+</div>
+    <small>+</small> 
+    <div class="key-name">p</div>
+    <p class="description description-aside">
+      paste from the system's clipboard
+    </p>
+  </div> 
+
+</div>
+
+<div class="l-data-group">
+ 
+  <h3>Open / Save / Quit</h3>
+
+  <div class="pure-g key-data box-stacked inside-inline">
+    <div class="pure-u-1-3 key-name">:</div> 
+   
+    <p class="pure-u-2-3 description description-aside">
+      open <strong>command line</strong> mode</p>
+  </div>
+
+    <p class="description">
+      ...than write:
+    </p>
+
+    <p class="description">
+      <span class="typing">e 'new-file-name'</span>
+      or <span class="typing">e 'existing-file-name'</span>
+      to open (start <strong>e</strong>diting) a file in a current tab/window<br>
+    </p>
+
+
+     <p class="description">
+       <span class="typing">w</span> to write (save) a current file
+     </p>
+
+     <p class="description">
+       <span class="typing">q</span> to quit </p>
+
+</div>
+ 
+<div class="l-data-group">
+
+  <h3>Tabs</h3>
+
+  <div class="key-data box-stacked inside-inline">
+    <div class="key-name">:</div>
+    <div class="typing">tabnew</div>
+    <p class="description description-aside">
+      create a new tab
+    </p>
+  </div> 
+
+  <div class="key-data box-stacked inside-inline">
+    <div class="key-name">g</div>
+    <small>+</small> 
+    <div class="key-name key-name-long">t/T</div>
+    <p class="description description-aside">
+      move to the next/previous tab
+    </p>
+  </div> 
+
+</div>
+
+<div class="l-data-group">
+
+  <h3>Search</h3>
+
+  <div class="key-data box-stacked inside-inline">
+    <div class="key-name">/</div>
+    <div class="typing">'pattern'</div>
+    <p class="description description-aside">
+      find a pattern
+    </p>
+  </div> 
+
+</div>
+
+
+<div class="footnote"> 
+
+  <h3>P.S.</h3>  
+  <p>
+    Remember that you need some time to really see improvement in you productivity.
+  </p>
+
+  <h3>Useful links:</h3>
+  
+   <p><a href="http://csswizardry.com/2014/06/vim-for-people-who-think-things-like-vim-are-weird-and-hard/">
+    Vim for people who think things like Vim are weird and hard</a></p>
+   <p><a href="http://vim.rtorr.com/">More advanced cheat sheet</a></p>
+
+</div> 

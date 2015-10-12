@@ -1,0 +1,125 @@
+header h1 {
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #999;
+  letter-spacing: -0.025em;
+}
+
+header h2 {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+ margin: 32px 8px 24px;
+ }
+
+article {
+  
+  p {
+    margin: 1em 0.5em;
+  }
+  
+  h2 {
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  
+  &:hover {
+    border-bottom: 1px solid;
+  }
+}
+
+.box-stacked {
+  display: block;
+}
+
+.box-inline {
+  diplay: inline-block;
+  float: left;
+ }
+
+.inside-inline div, .inside-inline p {
+  display: inline-block;
+}
+
+.clearfix:after {
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.key-data {
+  color: #777;
+  margin: 1em 0;
+}
+
+.key-data p {
+  text-align: center;
+  color: #333;
+}
+
+.key-name {
+  box-sizing: content-box;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  color: #333;
+  margin: 0.5em; 
+  padding: 0.5em;
+  background-color: #DDD;
+  border-radius: 5%;
+}
+
+.key-name small {
+  background-color: #AAA;
+  padding: 0 0.25em;
+  border-radius: 20%;
+}
+
+.box-inline .key-name,
+.box-inline .description {
+  margin: 0.5em 1em 0.5em 0.5em;
+}
+
+.key-name-long {
+  width: auto;
+}
+
+.description {
+  line-height: 1.5em;
+  margin: 2em 0.5em;
+}
+
+.key-data .description-aside {
+  text-align: left;
+  margin: 0 0.5em;
+  padding: 0em 1em;
+}
+
+.typing {
+  text-align: center;
+  padding: 0.125em 0.5em;
+  background-color: #FD9;
+  border-radius: 5px 5px;
+}
+
+.key-name-in-text {
+  @extend .typing;
+  background-color: #EEE;
+}
+
+.colorize {
+  color: green;
+}

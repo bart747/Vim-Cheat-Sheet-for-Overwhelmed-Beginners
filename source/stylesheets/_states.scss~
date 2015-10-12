@@ -1,0 +1,9 @@
+.is-key {
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center; 
+  padding: 0.5em;
+  background-color: #CCC;
+  border-radius: 5px 5px;
+  box-shadow: 0 0 2px #444;
+}
